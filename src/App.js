@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import RouteLanding from "./routing/RouteLanding";
+import AuthContextProvider from "./context/authContext";
+import UserContextProvider from "./context/userContext";
+import PostContextProvider from "./context/postContext";
+import ConversationContextProvider from "./context/conversationContext";
+import { SocketContext, socket } from "./context/socketContext";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContextProvider>
+      <SocketContext.Provider value={socket}>
+        <UserContextProvider>
+          <PostContextProvider>
+            <ConversationContextProvider>
+              <RouteLanding />
+            </ConversationContextProvider>
+          </PostContextProvider>
+        </UserContextProvider>
+        </SocketContext.Provider>
+    </AuthContextProvider>
   );
 }
 

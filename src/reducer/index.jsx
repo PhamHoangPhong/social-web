@@ -1,0 +1,32 @@
+export const SET_AUTH = "SET_AUTH";
+
+export const GET_ALL_USER = "GET_ALL_USER";
+export const GET_USER_FOLLOWINGS = "GET_USER_FOLLOWINGS";
+export const GET_USER_FAIL = "GET_USER_FAIL";
+export const GET_USER_FOLLOWERS = "GET_USER_FOLLOWERS";
+export const GET_USER_UNFOLLOWINGS = "GET_USER_UNFOLLOWINGS";
+export const SET_USER_SELECTED = "SET_USER_SELECTED";
+export const GET_USER_BY_ID = "GET_USER_BY_ID";
+export const FOLLOW_USER = "FOLLOW_USER";
+export const UNFOLLOW_USER = "UNFOLLOW_USER";
+export const UPDATE_USER = "UPDATE_USER";
+export const SEARCH_USER = "SEARCH_USER";
+export const GET_ON_USER = "GET_ON_USER";
+
+export const CREATE_POST = "CREATE_POST";
+export const GET_POST = "GET_POST";
+export const GET_SINGLE_POST = "GET_SINGLE_POST";
+export const DELETE_POST = "DELETE_POST";
+export const LIKE_POST = "LIKE_POST";
+export const UPDATE_POST = "UPDATE_POST";
+
+export const GET_COMMENT = "GET_COMMENT";
+export const RELOAD_COMMENT = "RELOAD_COMMENT";
+export const COMMENT = "COMMENT";
+export const SHARE_POST = "SHARE_POST";
+
+export const GET_CONVERSATION = "GET_CONVERSATION";
+export const CREATE_CONVERSATION = "CREATE_CONVERSATION";
+export const GET_MESSAGE = "GET_MESSAGE";
+export const SEND_MESSAGE = "SEND_MESSAGE";
+export const UPDATE_MESSAGE = "UPDATE_MESSAGE";
